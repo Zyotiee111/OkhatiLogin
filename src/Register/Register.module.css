@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.register_page{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom left, #fff, #fff 50%,#009654 50% ,#009654);
+   
+}
+.register_page h1{
+    font-size: 50px;
+    text-align: right;
+    color: #009654;
+    font-weight: 1000;
+    padding-right: 30px;
+}
+.container{
+    height: 500px;
+    width: 800px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 70px -40px #009654;
+    border-radius: 10px;
+    text-align: center;
+    margin: 60px 340px;
+}
+.container h1{
+    font-size: 40px;
+    text-align: center;
+    color: #009654;
+    font-weight: 700;
+    padding-right: 30px;
+}
+.register_input {
+    display: flex;
+    height: 51px;
+    width: 483px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 #009654;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #5a5a5a;
+    line-height: 16px;
+    align-items: center;
+    margin: 30px 140px;
+    
+  }
+  
+  .register_input > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .register_input > input:focus {
+    outline: none;
+  }
+  
+
+  
+  .register_button {
+    height: 50px;
+    width: 140px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #009654 !important;
+    padding: 5px 25px;
+    margin: 30px 340px;
+  }
+  .register_button button{
+      font-size: 16px;
+      font-weight: 500;
+  }
+  .alert{
+      color: red;
+     
+    }
+  .home_page{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background:linear-gradient(to bottom left, #fff, #fff 50%,#009654 50% ,#009654);
+    }
+    .home_page h1{
+        font-size: 50px;
+        text-align: center;
+        color: #009654;
+        font-weight: 1000;
+        padding-right: 30px;
+    }
+   
+
+@media only screen and (max-width: 1200px){
+    .container{
+        width: 750px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 350px;
+    }
+    .form{
+        width: 370px;
+    }
+    .register_input{
+        width: 300px;
+    }
+}
+
