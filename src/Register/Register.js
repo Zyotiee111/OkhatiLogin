@@ -110,11 +110,12 @@ export default function Register(props) {
                
             </form>
 
-            <div className={styles.buttom}>
-                            
-                            <p>Already a member?</p><Link to="/"><p style={{color: "#009653"}}>Sign In</p>
-                                       </Link>
-                           </div>
+                <div className={styles.buttom}>
+                    <p>Already a member?</p>
+                        <Link to="/" style={{textDecoration:"none"}}>
+                            <p style={{color: "#009653"}}>Sign In</p>
+                        </Link>
+                </div>
                
             </div>
           

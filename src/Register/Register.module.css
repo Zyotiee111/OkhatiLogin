@@ -7,7 +7,6 @@
 .register_page{
     width: 100vw;
     height: 100vh;
-    /* position: fixed; */
     background:linear-gradient(to bottom left, #fff, #fff 50%,#009654 50% ,#009654);
    
 }
@@ -24,8 +23,6 @@
     justify-content: center;
     align-items: center; 
     height: 90vh;
-   
-
 }
 .container{
     height: 500px;
