@@ -22,16 +22,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    height: 90vh;
+    height: 80vh;
 }
 .container{
-    height: 500px;
-    width: 800px;
+    height: 70vh;
     background: #FFFFFF;
     box-shadow: 0px 10px 70px -40px #009654;
     border-radius: 10px;
     text-align: center;
-    /* margin: 60px 340px; */
+    
 }
 .container h1{
     font-size: 40px;
