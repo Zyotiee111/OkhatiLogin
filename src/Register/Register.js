@@ -62,7 +62,7 @@ export default function Register(props) {
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    require/>
+                    required/>
                 </div>
                
 

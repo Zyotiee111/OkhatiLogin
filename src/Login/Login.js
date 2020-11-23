@@ -43,7 +43,8 @@ export default function Login({users, setLoginStatus}) {
                     type="text"
                     placeholder="Email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)} />
+                    onChange={(e) => setEmail(e.target.value)}
+                    required />
                 </div>
 
                 {/* password */}
@@ -53,7 +54,8 @@ export default function Login({users, setLoginStatus}) {
                     type="password"
                     placeholder="Password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}/>
+                    onChange={(e) => setPassword(e.target.value)}
+                    required/>
                 </div>
 
                 <div className={styles.login_button}>
