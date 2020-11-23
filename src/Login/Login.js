@@ -38,47 +38,46 @@ export default function Login({users, setLoginStatus}) {
             <div className={styles.main_container} >
                     <div className={styles.container}>
                         <h1> Login </h1>
-                    <form  onSubmit={(e) => handleSubmit(e)}>
+                        <form  onSubmit={(e) => handleSubmit(e)}>
                         {/* email */}
                         <div className={styles.login_input}>
-                        < EmailIcon />
-                        <input
-                            type="text"
-                            placeholder="Email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required />
+                            < EmailIcon />
+                            <input
+                                type="text"
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required 
+                            />
                         </div>
 
                         {/* password */}
                         <div className= {styles.login_input}>
-                        <VpnKeyIcon />
-                        <input
-                            type="password"
-                            placeholder="Password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required/>
+                            <VpnKeyIcon />
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
                         </div>
 
                         <div className={styles.login_button}>
-                        <Button display="flex" type="submit">
-                            Login
-                        </Button>
+                            <Button display="flex" type="submit">
+                                Login
+                            </Button>
                         </div>
                     </form>
                     { error && <p style ={{color:"red"}}> Invalid email or password </p>}
-                    <div className={styles.buttom}>
+                    <div>
                         <p>New User?</p>
                         <Link to="/register" style={{textDecoration:"none"}}>
                             <p style={{color: "#009653"}}>Sign Up</p>
                         </Link>
                     </div>
-            </div>       
-        </div>
-          
-            
-            
+                </div>       
+            </div>
         </div>
         
     )

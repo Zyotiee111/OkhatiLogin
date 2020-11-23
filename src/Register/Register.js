@@ -45,81 +45,77 @@ export default function Register(props) {
                 setPassword_error(true)
             }
         }
-        
-    
-
     return (
         <div className ={styles.register_page}>
             <div >
-             <h1> Okhati </h1>
-             </div>
-             <div className={styles.main_container} >
-            <div className={styles.container}>
-                <h1> Register</h1>
-            <form onSubmit={(e) => submitHandler(e)} className ={styles.form}>
-                {/* email */}
-                <div className={styles.register_input}>
-                < EmailIcon />
-                <input
-                    type="text"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required/>
-                </div>
-               
+                <h1> Okhati </h1>
+            </div>
+            <div className={styles.main_container} >
+                <div className={styles.container}>
+                    <h1> Register</h1>
+                <form onSubmit={(e) => submitHandler(e)} className ={styles.form}>
+                    {/* email */}
+                    <div className={styles.register_input}>
+                        < EmailIcon />
+                        <input
+                            type="text"
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
 
                 {/* password */}
-                <div className= {styles.register_input}>
-                <VpnKeyIcon />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    minlength="8"
-                    required/>
-                </div>
-        
-                 {/* confirm password */}
-                <div className={styles.register_input}>
-                <VpnKeyIcon />
-                <input
-                    type="password"
-                    placeholder="Confirm Password"
-                    value={confirmPassword}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
-                    minlength="8"
-                    required/>
-                </div>
-               
-               <div className={styles.register_button}>
-                <Button display="flex" type="submit">
-                    Register
-                </Button>
-                </div>
-                <div className= {styles.error}>
-                {email_error && (
-                    <p className={styles.alert}> Invalid Email</p> 
-                  )}
-                {password_error && (
-                    <p className={styles.alert}> Invalid Password- Must contain letter and alphabets </p> 
-                  )}
-                </div>
-                 
-               
-            </form>
+                    <div className= {styles.register_input}>
+                        <VpnKeyIcon />
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            minlength="8"
+                            required
+                        />
+                    </div>
+            
+                    {/* confirm password */}
+                    <div className={styles.register_input}>
+                    <VpnKeyIcon />
+                    <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        minlength="8"
+                        required/>
+                    </div>
+                
+                <div className={styles.register_button}>
+                    <Button display="flex" type="submit">
+                        Register
+                    </Button>
+                    </div>
+                    <div className= {styles.error}>
+                    {email_error && (
+                        <p className={styles.alert}> Invalid Email</p> 
+                    )}
+                    {password_error && (
+                        <p className={styles.alert}> Invalid Password- Must contain letter and alphabets </p> 
+                    )}
+                    </div>
+                </form>
 
-                <div className={styles.buttom}>
-                    <p>Already a member?</p>
-                        <Link to="/" style={{textDecoration:"none"}}>
-                            <p style={{color: "#009653"}}>Sign In</p>
-                        </Link>
+                    <div className={styles.buttom}>
+                        <p>Already a member?</p>
+                            <Link to="/" style={{textDecoration:"none"}}>
+                                <p style={{color: "#009653"}}>Sign In</p>
+                            </Link>
+                    </div>
+                
                 </div>
-               
-            </div>
-          
-        </div>  
+            
+            </div>  
             
         </div>
         
