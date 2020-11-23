@@ -43,7 +43,7 @@ export default function Login({users, setLoginStatus}) {
                         <div className={styles.login_input}>
                             < EmailIcon />
                             <input
-                                type="text"
+                                type="email"
                                 placeholder="Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
