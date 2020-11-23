@@ -50,10 +50,13 @@ export default function Register(props) {
 
     return (
         <div className ={styles.register_page}>
+            <div >
              <h1> Okhati </h1>
+             </div>
+             <div className={styles.main_container} >
             <div className={styles.container}>
                 <h1> Register</h1>
-            <form onSubmit={(e) => submitHandler(e)}>
+            <form onSubmit={(e) => submitHandler(e)} className ={styles.form}>
                 {/* email */}
                 <div className={styles.register_input}>
                 < EmailIcon />
@@ -106,6 +109,7 @@ export default function Register(props) {
                  
                
             </form>
+
             <div className={styles.buttom}>
                             
                             <p>Already a member?</p><Link to="/"><p style={{color: "#009653"}}>Sign In</p>
@@ -114,7 +118,7 @@ export default function Register(props) {
                
             </div>
           
-            
+        </div>  
             
         </div>
         
