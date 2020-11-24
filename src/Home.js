@@ -10,8 +10,8 @@ export default function Home({ setLoginStatus, loginStatus }) {
     return (
         <div className ={styles.home_page}>
          <h3>Welcome to <h1> Okhati </h1></h3>
-             <div style={{float:'right'}} > 
-                <Button onClick={() => handleLogout()}><ExitToAppIcon/>logout</Button> 
+             <div style={{float:'right', marginRight: '10px'}} > 
+                <Button variant="outlined" onClick={() => handleLogout()}><ExitToAppIcon/>logout</Button> 
              </div>
              
         </div>
